@@ -15,7 +15,7 @@ import javax.servlet.http.HttpSession;
 public class SessionInterceptor implements HandlerInterceptor{
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object o) throws Exception {
         String uri = request.getRequestURI();
-        if (uri.indexOf("login")>=0) {
+        if (uri.indexOf("login")>=0 ||uri.indexOf("attendList")>=0) {
             return true;
         }
 

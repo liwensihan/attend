@@ -434,19 +434,13 @@
                         },
                         {"data": "userId" , "visible" : false },
                         {
-                            "data": "attendDate",
-                            render: function (data, type, full) {
-                                return new Date(data).format("yyyy-MM-dd");
-                            }
-                        },
-                        {
                             "data": "attendWeek",
                             render: function (data, type, full) {
                                 return week_CN[data - 1];
                             }
                         },
                         {
-                            "data": "attendMoring",
+                            "data": "attendMorning",
                             render: function (data, type, full) {
                                 if(data!=null){
                                     return new Date(data).format("hh:mm:ss");

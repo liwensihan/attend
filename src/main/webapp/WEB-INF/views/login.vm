@@ -102,7 +102,6 @@
                     data:{"username":user,"password":pwd},
                     success:function (data) {
                         if(data=="login_succ"){
-                            alert(data);
                            window.location.href="/user/home";
                         }else{
                             $("#login_error").css("visibility","visible");
